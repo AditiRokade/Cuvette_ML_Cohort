@@ -2,9 +2,9 @@ import cv2 as cv              #for manipulating images
 import numpy as np            #for using nd array
 import pandas as pd           #for loading csv file
 
-location="cat"                #location var storing cat folder
-points=pd.read_csv("data_labels.csv")
-n=len(points)                 #length of csv file
+location="cat"                       #location var storing cat folder
+points=pd.read_csv("data_labels.csv")#reading csv file
+n=len(points)                        #length of csv file
 
 for i, name in enumerate(points["name"][1:]): #to keep a count of iterations
   img_path = location + "/" + name
