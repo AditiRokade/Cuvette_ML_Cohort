@@ -1,6 +1,6 @@
 import cv2 as cv              #for manipulating images
 import numpy as np            #for using nd array
-import pandas as pd           #for loading csv fil
+import pandas as pd           #for loading csv file
 
 location="cat"                #location var storing cat folder
 points=pd.read_csv("data_labels.csv")
